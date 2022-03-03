@@ -31,7 +31,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-postcss
+  - jekyll-postcss-v2
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -52,3 +52,11 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+postcss:
+  cache: false
+
+sass:
+  sass_dir: _sass/
+  load_paths:
+    - ./node_modules/
