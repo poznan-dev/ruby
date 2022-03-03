@@ -1,20 +1,20 @@
 <footer class="text-gray-600 bg-gray-100 body-font">
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="{{ "/" | relative_url }}">
-      <img class="w-11 h-10 text-white rounded-md" src="{{ "/assets/logo.png" | relative_url }}">
+      <img class="text-white rounded-md" src="{{ "/assets/logo-small.png" | relative_url }}">
       <span class="ml-3 text-xl">{{ site.title | escape }}</span>
     </a>
     <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 — {{ site.full_title | escape }}</p>
     <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
       {%- if site.social_media.discord -%}
         <a class="text-gray-500 px-2" href="{{ site.social_media.discord }}">
-          <img src="{{ "/assets/discord-logo.svg" | relative_url }}" class="h-5" alt="Discord Logo">
+          <img src="{{ "/assets/icons/discord-logo.svg" | relative_url }}" class="h-5" alt="Discord Logo">
         </a>
       {%- endif -%}
 
       {%- if site.social_media.meetup -%}
         <a class="text-gray-500 px-2" href="{{ site.social_media.meetup }}">
-          <img src="{{ "/assets/meetup-logo.svg" | relative_url }}" class="h-5" alt="Discord Logo">
+          <img src="{{ "/assets/icons/meetup-logo.svg" | relative_url }}" class="h-5" alt="Discord Logo">
         </a>
       {%- endif -%}
 
