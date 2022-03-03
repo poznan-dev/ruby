@@ -18,7 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: PRUG
+full_title: Poznań Ruby User Group
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -27,6 +28,11 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # google_analytics:
+
+social_media:
+  discord: https://discord.gg/JxM8GNsUF9
+  facebook: https://www.facebook.com/rubypoznan
+  meetup: https://www.meetup.com/PoznanRUG/
 
 plugins:
   - jekyll-feed
