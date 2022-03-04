@@ -32,7 +32,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 social_media:
   discord: https://discord.gg/JxM8GNsUF9
   facebook: https://www.facebook.com/rubypoznan
-  meetup: https://www.meetup.com/PoznanRUG/
+  meetup: https://www.meetup.com/PoznanRUG
+  github: https://github.com/prug
 
 plugins:
   - jekyll-feed

@@ -6,6 +6,12 @@
     </a>
     <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 — {{ site.full_title | escape }}</p>
     <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      {%- if site.social_media.github -%}
+        <a class="text-black px-2" href="{{ site.social_media.github }}">
+          <img src="{{ "/assets/icons/github-logo.svg" | relative_url }}" class="h-5" alt="Github Logo">
+        </a>
+      {%- endif -%}
+
       {%- if site.social_media.discord -%}
         <a class="text-gray-500 px-2" href="{{ site.social_media.discord }}">
           <img src="{{ "/assets/icons/discord-logo.svg" | relative_url }}" class="h-5" alt="Discord Logo">
@@ -14,7 +20,7 @@
 
       {%- if site.social_media.meetup -%}
         <a class="text-gray-500 px-2" href="{{ site.social_media.meetup }}">
-          <img src="{{ "/assets/icons/meetup-logo.svg" | relative_url }}" class="h-5" alt="Discord Logo">
+          <img src="{{ "/assets/icons/meetup-logo.svg" | relative_url }}" class="h-5" alt="Meetup Logo">
         </a>
       {%- endif -%}
 
@@ -25,7 +31,6 @@
           </svg>
         </a>
       {%- endif -%}
-
     </span>
   </div>
 </footer>
