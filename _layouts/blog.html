@@ -4,20 +4,20 @@ layout: default
 
 <section class="text-gray-600 body-font overflow-hidden">
   <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+    <div class="flex flex-wrap w-full mb-12 flex-col">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">{{ page.title }}</h1>
       <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
         {{ content }}
       </p>
     </div>
 
-    <div class="-my-8 divide-y-2 divide-gray-100">
+    <div class="divide-y-2 divide-gray-100">
       {%- if site.posts.size > 0 -%}
         {%- for post in site.posts -%}
           {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
           <div class="py-8 flex flex-wrap md:flex-nowrap">
             <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-              <span class="mt-1 text-gray-500 text-sm">{{ post.date | date: date_format }}</span>
+              <span class="mt-1 mr-4 text-gray-500 text-sm">{{ post.date | date: date_format }}</span>
             </div>
             <div class="md:flex-grow">
               <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">{{ post.title | escape }}</h2>
