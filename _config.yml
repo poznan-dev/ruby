@@ -26,3 +26,9 @@ sass:
   sass_dir: _sass/
   load_paths:
     - ./node_modules/
+
+exclude:
+  - package-lock.json
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
