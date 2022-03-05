@@ -9,13 +9,14 @@ layout: default
         {{ site.full_title | escape }}
       </h1>
       <p class="mb-8 leading-relaxed">
-        Grupa fanów oraz użytkowników języka 💎 Ruby z Wielkopolski.<br>
+        Grupa pasjonatów języka 💎 Ruby z Wielkopolski.<br>
         Spotykamy się regularnie, aby dzielić się swoimi 💡 pomysłami w przyjaznej atmosferze z 🍕 przekąskami.
-        {%- if site.social_media.meetup -%}
-          <br>
-          📅 Kalendarium dostępne na platformie <a class="text-blue-600 hover:text-blue-800 visited:text-purple-600" href="{{ site.social_media.meetup }}">Meetup</a>.
-        {%- endif -%}
       </p>
+      {%- if site.social_media.meetup -%}
+        <p>
+          📅 Kalendarium dostępne na platformie <a class="text-blue-600 hover:text-blue-800 visited:text-purple-600" href="{{ site.social_media.meetup }}">Meetup</a>.
+        </p>
+      {%- endif -%}
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
       <img class="object-cover object-center mx-auto" alt="hero" src="{{ "/assets/icons/ruby-logo.svg" | relative_url }}">
@@ -24,43 +25,59 @@ layout: default
 </section>
 
 <section class="text-gray-600 body-font">
-  <div class="container px-5 py-12 mx-auto">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+        📣 Social media
+      </h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        Zachęcamy do dołączenia do nas na innych platformach. Na Meetup i Facebook znajduje się kalendarium naszych cyklicznych spotkań wraz z podstawowym zestawem informacji. Jeżeli masz ochotę porozmawiać z innymi pasjonatami zapraszamy na Discord. 🎉
+      </p>
+    </div>
     <div class="flex flex-wrap -m-4 text-center">
-
       {%- if site.social_media.github -%}
-        <div class="p-4 sm:w-1/4 w-1/2">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
           <a class="hover:text-gray-900" href="{{ site.social_media.github }}">
-            <img src="{{ "/assets/icons/github-logo.svg" | relative_url }}" class="h-10 my-4 mx-auto" alt="Github Logo">
-            <p class="leading-relaxed">GitHub</p>
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <img src="{{ "/assets/icons/github-logo.svg" | relative_url }}" class="h-10 my-4 mx-auto" alt="Github Logo">
+
+              <p class="leading-relaxed">GitHub</p>
+            </div>
           </a>
         </div>
       {%- endif -%}
-
       {%- if site.social_media.discord -%}
-        <div class="p-4 sm:w-1/4 w-1/2">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
           <a class="hover:text-gray-900" href="{{ site.social_media.discord }}">
-            <img src="{{ "/assets/icons/discord-logo.svg" | relative_url }}" class="h-10 my-4 mx-auto" alt="Discord Logo">
-            <p class="leading-relaxed">Discord</p>
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <img src="{{ "/assets/icons/discord-logo.svg" | relative_url }}" class="h-10 my-4 mx-auto" alt="Discord Logo">
+
+              <p class="leading-relaxed">Discord</p>
+            </div>
           </a>
         </div>
       {%- endif -%}
-
       {%- if site.social_media.meetup -%}
-        <div class="p-4 sm:w-1/4 w-1/2">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
           <a class="hover:text-gray-900" href="{{ site.social_media.meetup }}">
-            <img src="{{ "/assets/icons/meetup-logo.svg" | relative_url }}" class="h-10 my-4 mx-auto" alt="Meetup Logo">
-            <p class="leading-relaxed">Meetup</p>
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <img src="{{ "/assets/icons/meetup-logo.svg" | relative_url }}" class="h-10 my-4 mx-auto" alt="Meetup Logo">
+
+              <p class="leading-relaxed">Meetup</p>
+            </div>
           </a>
         </div>
       {%- endif -%}
-
       {%- if site.social_media.facebook -%}
-        <div class="p-4 sm:w-1/4 w-1/2">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
           <a class="hover:text-gray-900" href="{{ site.social_media.facebook }}">
-            <svg stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-10 my-4 mx-auto" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-            </svg>
-            <p class="leading-relaxed">Facebook</p>
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-10 my-4 mx-auto" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+
+              <p class="leading-relaxed">Facebook</p>
+            </div>
           </a>
         </div>
       {%- endif -%}
@@ -68,8 +85,21 @@ layout: default
   </div>
 </section>
 
-<section class="text-gray-600 body-font relative">
-  <div class="mt-24">
+<section class="text-gray-600 body-font">
+  <div class="container px-5 pt-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+        🌍 Lokalizacja
+      </h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        Aktualne spotkania odbywają się w <b class="font-bold">Plus Jeden</b>.
+        <br>
+        Ewentualne odstępstwa od reguły będą publikowane na naszych kanałach informacyjnych - Facebook oraz Meetup.
+      </p>
+    </div>
+  </div>
+
+  <div class="relative">
     <div class="absolute inset-0 bg-gray-300">
       <iframe width="100%"
               height="100%"
@@ -86,8 +116,6 @@ layout: default
     </div>
     <div class="container px-5 py-24 mx-auto flex">
       <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Lokalizacja</h2>
-
         <div class="py-6">
           <p class="mt-1 font-bold">Plus Jeden</p>
           <p class="mt-1">Za Bramką 1</p>
