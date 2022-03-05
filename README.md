@@ -7,7 +7,7 @@
 
 ## Stack
 - Jekyll
-- Tailwindcss with JIT
+- Tailwindcss
 
 ## Development
 After installing dependencies with `npm` and `bundler` it's as easy as:
