@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<section class="text-gray-600 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+
+      <header>
+        <div class="flex flex-wrap w-full mb-12 flex-col">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">{{ page.title | escape }}</h1>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+              {{ page.date | date: date_format }}
+            </time>
+            {%- if page.author -%}
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+            {%- endif -%}</p>
+          </p>
+        </div>
+      </header>
+
+      <div class="prose mx-auto" itemprop="articleBody">
+        {{ content }}
+      </div>
+
+      <a href="{{ page.url | relative_url }}" hidden></a>
+    </article>
+
+    <a class="text-indigo-500 inline-flex items-center mt-8" href="{{ "/blog" | relative_url }}">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+      </svg>
+      Powrót
+    </a>
+  </div>
+</section>

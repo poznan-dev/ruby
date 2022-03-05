@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="text-gray-600 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto">
+    <article>
+      <header>
+        <div class="flex flex-wrap w-full mb-12 flex-col">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">{{ page.title | escape }}</h1>
+        </div>
+      </header>
+
+      <div class="prose" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </article>
+  </div>
+</section>
