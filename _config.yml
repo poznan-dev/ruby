@@ -4,8 +4,8 @@
 title: PRUG
 email: your-email@example.com
 description: Poznań Ruby User Group
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://prug.poznan.dev"
 # google_analytics:
 
 social_media:
